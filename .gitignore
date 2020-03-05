@@ -1,0 +1,4 @@
+bitbake/
+build/tmp/
+build/bitbake-cookerdaemon.log
+
