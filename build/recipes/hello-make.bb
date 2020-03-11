@@ -1,6 +1,6 @@
-DESCRIPTION = "Simple hello-bazel application"
+DESCRIPTION = "Simple hello-make application"
 
-S = "${TOPDIR}/../hello-bazel"
+S = "${TOPDIR}/../hello-make"
 D = "${WORKDIR}"
 
 do_build() {
@@ -12,19 +12,19 @@ do_build() {
 do_compile() {
     bbnote "do_compile"
     cd ${S}
-    bazel build ...
+    make
 }
 
 do_install() {
     bbnote "do_install"
     #install -d ${D}${bindir}
-    install -m 0755 ${S}/bazel-bin/hello-bazel ${D}
+    install -m 0755 ${S}/hello-make ${D}
 }
 
 do_clean() {
     bbnote "do_clean"
     cd ${S}
-    bazel clean
+    make clean
 }
 
 addtask compile  after do_build
