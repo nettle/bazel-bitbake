@@ -9,12 +9,12 @@ Setup bitbake environment:
 
 Run bitbake command:
 
-    bitbake hello-world
+    bitbake world
 
 NOTE: alternatively you can also run bitbake like this:
 
-    PATH=$PATH:$PWD/bitbake/bin BBPATH=$PWD/build bitbake hello-world
+    PATH=$PATH:$PWD/bitbake/bin BBPATH=$PWD/build bitbake world
 
 Clean command:
 
-    bitbake hello-world -c clean
+    bitbake world -c clean

@@ -1,6 +1,6 @@
-DESCRIPTION = "Simple hello-world application"
+DESCRIPTION = "Simple hello-bazel application"
 
-S = "${TOPDIR}/../hello-world"
+S = "${TOPDIR}/../hello-bazel"
 D = "${WORKDIR}"
 
 do_build() {
@@ -29,7 +29,7 @@ do_compile() {
 do_install() {
     #echo "=== do_install:"
     #install -d ${D}${bindir}
-    install -m 0755 ${S}/bazel-bin/hello-world ${D}
+    install -m 0755 ${S}/bazel-bin/hello-bazel ${D}
 }
 
 do_clean() {
